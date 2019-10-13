@@ -2,6 +2,16 @@ import React, {Component} from 'react';
 import { list } from 'postcss';
 
 class TOC extends Component {
+    shouldComponentUpdate(newProps, newState) {
+        console.log('===>TOC render shouldComponentUpdate',
+            newProps.data,
+            this.props.data
+        );
+        if(this.props.data === newProps.data) {
+            return false;
+        }
+        return true;
+    };
     render(){
         console.log('TOC render');
         var lists = [];
