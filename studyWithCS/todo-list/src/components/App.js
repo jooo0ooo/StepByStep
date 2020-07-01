@@ -10,13 +10,13 @@ const initialTodos = new Array(500).fill(0).map(
 class App extends Component {
     state = {
         input: '',
-        todos: initialTodos
-        /*
+        //todos: initialTodos
+        
         todos: [
             {id:0, text: 'studying react', done: true},
             {id:1, text: 'Trying Component Styling', done: false}
         ]
-        */
+        
     }
 
     id = 1
